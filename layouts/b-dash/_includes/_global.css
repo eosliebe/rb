@@ -1,0 +1,279 @@
+/*!
+ * kimsQ Rb v2.0 one-page web Layout
+ * layout Version: 1.0
+ * Homepage: http://www.kimsq.co.kr
+ * Copyright 2014 redblock inc
+ * Licensed under MIT
+ * Based on Bootstrap v3.1.1
+*/
+
+/**
+ * 목차:
+ *
+ * 1 - Reset 초기화
+ * 2 - Structure 구조
+ * 3 - Header 헤더 
+ * 4 - Content 컨텐츠
+ * 5 - affix  
+ * 6 - Footer 풋터
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1 - Reset 초기화
+ * ----------------------------------------------------------------------------
+ */
+
+/*폰트설정*/
+
+#rb-body,
+#rb-body h1,
+#rb-body h2,
+#rb-body h3,
+#rb-body h4,
+#rb-body h5,
+#rb-body h6,
+#rb-body input,
+#rb-body select,
+#rb-body textarea  {
+    font-family: 'Lato','open sans','helvetica',arial,sans-serif, FontAwesome;
+}
+
+@media (max-width: 768px) {
+  #rb-body,
+  #rb-body h1,
+  #rb-body h2,
+  #rb-body h3,
+  #rb-body h4,
+  #rb-body h5,
+  #rb-body h6,
+  #rb-body input,
+  #rb-body select,
+  #rb-body textarea  {
+    font-family: 'Lato','open sans','helvetica',arial,sans-serif, FontAwesome;
+  }
+}
+
+
+/**
+ * 2 - Structure 구조 
+ *
+ * 컬럼,여백 사이즈 조정 
+ * ----------------------------------------------------------------------------
+ */
+
+
+/* bootstrap Container size 와 grid-gutter-width 수정 */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 320px
+}
+@media (min-width: 768px) {
+  .container {
+    width: 740px;  /* padding여백 제외하면 720px */
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 1000px; /* padding여백 제외하면 980px */
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px; /* padding여백 제외하면 980px */
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.container > .navbar-header, 
+.container-fluid > .navbar-header, 
+.container > .navbar-collapse, 
+.container-fluid > .navbar-collapse {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.navbar-brand {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.navbar-toggle {
+  margin-right: 10px;
+}
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.form-horizontal .form-group {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*컬럼 사이즈 지정*/
+@media (min-width: 992px) {
+  #content-main {
+    width: 780px; /* padding여백 제외하면 760px */
+    left: 200px;
+  }
+  #content-sub {
+    width: 200px; /* padding여백 제외하면 180px */
+    right: 780px
+  }
+}
+
+
+/**
+ * 3 - navbar  
+ * ----------------------------------------------------------------------------
+ */
+
+.navbar-toggle {
+  float: left;
+  margin-left: 10px;
+}
+.navbar-default {
+  background-color: rgba(240,240,237,0.95);
+  background-image: none;
+}
+.navbar-default .navbar-toggle {
+  border: none; 
+}
+
+
+/**
+ * 4 - Content 
+ * ----------------------------------------------------------------------------
+ */
+
+/* rb-cover */
+
+.rb-cover {
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-image: url(/rb2/layouts/b-dash/assets/img/jumbotron-cover.jpg);
+  background-size: cover;
+  background-position: 49% 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.rb-cover h1 {
+  margin: 0 ;
+  font-size: 65px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.rb-cover p {
+  line-height: 1.2;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.rb-cover .rb-nav {
+  line-height: 1.2;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  border-top: 3px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.rb-cover .rb-nav ul {
+  margin-bottom: 0;
+  padding: 5px
+}
+.rb-cover .rb-nav li {
+  display: inline-block;
+}
+.rb-cover .rb-nav .active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.rb-cover .rb-nav a {
+  padding: 5px 0;
+  color: #fff;
+  word-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.page-header h1 {
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+/* Media queries */
+
+@media (max-width: 727px) {
+
+  .rb-cover {
+    padding: 100px 15px 20px;
+  }
+
+  .rb-cover h1 {
+    font-size: 38px;
+    line-height: 1.3;
+  }
+
+}
+
+
+
+/**
+ * 5 - affix  
+ * ----------------------------------------------------------------------------
+ */
+
+.rb-nav.affix-top {
+  margin: 150px 0  50px;
+}
+
+.rb-nav.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+  border-top: 3px solid #998d71;
+  border-bottom: 1px solid #998d71;
+  border-bottom-color: rgba(0,0,0,0.2);
+  -webkit-box-shadow:  0 3px 9px rgba(0, 0, 0, .25);
+      box-shadow:  0 3px 9px rgba(0, 0, 0, .25);
+}
+
+.rb-nav.affix a {
+  color: #444;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+/**
+ * 6 - Footer 풋터
+ * ----------------------------------------------------------------------------
+ */
+.rb-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    border-top: 1px solid #e5e5e5;
+}

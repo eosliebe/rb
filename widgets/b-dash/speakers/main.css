@@ -1,0 +1,40 @@
+.rb-section-speakers .page-header {
+	margin: 0 0  30px;
+	background-size: cover;
+	background-position: 49% 50%;
+	background-repeat: no-repeat;
+}
+
+.rb-section-speakers .page-header h1 {
+	padding: 80px 0 90px;
+	color: #fff;
+	font-size: 50px;
+	word-spacing: -1px
+}
+
+.rb-section-speakers .thumbnail {
+	border : none;
+	height: 
+}
+
+.rb-section-speakers .caption {
+	text-align: center;
+}
+
+.rb-section-speakers .caption p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.rb-section-speakers .caption h3 {
+	font-size: 18px;
+}
+
+/* 이미지 로드전 로딩이미지 출력  */
+.rb-section-speakers .page-header,
+.rb-section-speakers .rb-lazy-object,
+.rb-section-speakers .lazy-hidden  {
+    min-height: 30px;
+    min-width: 100px;
+    background: url('http://localhost/rb2/_core/images/loading/loading-spokes.svg') no-repeat 50% 50%;
+}

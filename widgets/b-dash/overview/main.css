@@ -1,0 +1,23 @@
+
+.rb-section-overview {
+	background-color: #F3F3F3;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #686868;
+	padding: 30px 0 20px;
+}
+
+.rb-section-overview h2 {
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.rb-section-overview dt {
+	font-weight: normal;
+	text-align: left;
+}
+
+.rb-section-overview dt,
+.rb-section-overview dd {
+	line-height: 1.5
+}

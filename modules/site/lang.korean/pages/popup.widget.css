@@ -1,0 +1,16 @@
+
+
+#widgetbox {width:100%;height:550px;padding:0;margin:0;}
+
+#widgetbox .category {float:left;width:205px;height:100%;margin-right:-200px;border-right:#dfdfdf solid 1px;overflow-y:auto;overflow-x:hidden;}
+#widgetbox .category .tree {padding:10px 0 0 10px;margin:0;}
+
+#widgetbox .category  .tree .dir01 {padding:1px 0 1px 0;}
+#widgetbox .category  .tree .dir01 .alldir {color:#000000;}
+#widgetbox .category  .tree .dir01 .nowdir {font-weight:bold;color:#33C9FD;}
+#widgetbox .category  .tree .dir01 img {position:relative;top:1px;}
+
+#widgetbox .content {margin-left:205px;height:100%;padding:25px 15px 15px 15px;overflow-y:auto;overflow-x:hidden;}
+#widgetbox .content .none {font-size:15px;font-family:dotum;color:#c0c0c0;text-align:center;padding:50px 0 0 0;}
+#widgetbox .content .none img {position:relative;top:1px;}
+

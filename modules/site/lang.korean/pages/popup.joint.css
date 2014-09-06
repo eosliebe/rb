@@ -1,0 +1,17 @@
+
+
+#jointbox {width:100%;height:550px;padding:0;margin:0;}
+
+#jointbox .category {float:left;width:205px;height:100%;margin-right:-200px;border-right:#dfdfdf solid 1px;overflow-y:auto;overflow-x:hidden;}
+#jointbox .category ul {padding:20px 0 0 20px;margin:0;}
+#jointbox .category li {list-style-type:none;padding:3px 0 3px 20px;background:url('../../../../_core/images/_public/ico_folder_01.gif') left 2px top 6px no-repeat;}
+#jointbox .category .selected {background:url('../../../../_core/images/_public/ico_folder_02.gif') left 2px top 6px no-repeat;}
+#jointbox .category .selected a {color:#ff0000;}
+#jointbox .category li a span {font-size:11px;font-family:arial;color:#c0c0c0;padding:0 0 0 3px;}
+
+
+#jointbox .content {margin-left:205px;height:100%;padding:25px 15px 15px 15px;overflow-y:auto;overflow-x:hidden;}
+#jointbox .content .none {font-size:15px;font-family:dotum;color:#c0c0c0;text-align:center;padding:50px 0 0 0;}
+#jointbox .content .none img {position:relative;top:1px;}
+
+

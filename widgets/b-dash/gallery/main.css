@@ -1,0 +1,9 @@
+.rb-section-gallery .item img {
+	width: 100% !important;
+}
+
+.rb-section-gallery .page-header {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: none;
+}

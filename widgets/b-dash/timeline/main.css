@@ -1,0 +1,57 @@
+
+.rb-section-timeline .page-header {
+	margin: 0 0  30px;
+	background-size: cover;
+	background-position: 49% 50%;
+	background-repeat: no-repeat;
+}
+
+.rb-section-timeline .page-header h1 {
+	padding: 80px 0 90px;
+	color: #fff;
+	font-size: 50px;
+	word-spacing: -1px
+}
+
+.rb-section-timeline .rb-day {
+	margin: 50px 0 40px;
+	line-height: 1;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #998d71;
+}
+
+.rb-section-timeline .rb-day:first-child {
+	margin-top:0;
+}
+
+.rb-section-timeline .rb-time {
+	font-size: 24px;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	display: inline-block;
+
+}
+
+.rb-section-timeline dl {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 0;
+	padding-bottom: 46px;
+	margin-left: 12px;
+	border-left: 2px dotted #998d71;
+}
+
+.rb-section-timeline .rb-dot {
+	position: absolute;
+	left: -7px;
+	top: -1px;
+	color: #998d71;
+}
+
+/* 이미지 로드전 로딩이미지 출력  */
+.rb-section-timeline .page-header,
+.rb-section-timeline .lazy-hidden  {
+
+}

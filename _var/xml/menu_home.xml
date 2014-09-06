@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+	<!-- 킴스큐4-메뉴구조 -->
+	<!-- 동해물과-->
+	<depth1 name="동해물과" ename="6" link="./?c=6" target="" />
+
+	<!-- 백두산이-->
+	<depth1 name="백두산이" ename="7" link="./?c=7" target="" />
+
+	<!-- 마르고-->
+	<depth1 name="마르고" ename="8" link="./?c=8" target="" />
+
+</menu>
