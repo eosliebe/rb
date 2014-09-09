@@ -212,7 +212,7 @@ $_nowlayuotdir = dirname($_SESSION['setLayoutKind']?$_HS['m_layout']:$_HS['layou
 			<ul class="nav nav-tabs nav-justified" role="tablist">
 				<li<?php if(!$_COOKIE['sideBottomTab']||$_COOKIE['sideBottomTab']=='quick'):?> class="active"<?php endif?>><a href="#sidebar-quick" role="tab" data-toggle="tab" title="퀵 패널" data-tooltip="tooltip" onclick="_cookieSetting('sideBottomTab','quick');"><i class="kf kf-bi-05 fa-2x"></i></a></li>
 				<li<?php if($_COOKIE['sideBottomTab']=='sites'):?> class="active"<?php endif?>><a href="#sidebar-sites" role="tab" data-toggle="tab" title="사이트 패널" data-tooltip="tooltip" onclick="_cookieSetting('sideBottomTab','sites');"><i class="kf kf-domain fa-2x"></i></a></li>
-				<li<?php if($_COOKIE['sideBottomTab']=='modules'):?> class="active"<?php endif?>><a href="#sidebar-modules" role="tab" data-toggle="tab" title="모듈 패널"><i class="kf kf-module fa-2x" onclick="_cookieSetting('sideBottomTab','modules');"></i></a></li>
+				<li<?php if($_COOKIE['sideBottomTab']=='modules'):?> class="active"<?php endif?>><a href="#sidebar-modules" role="tab" data-toggle="tab" title="모듈 패널" data-tooltip="tooltip"><i class="kf kf-module fa-2x" onclick="_cookieSetting('sideBottomTab','modules');"></i></a></li>
 			</ul>
 		</div>
 	</div>
