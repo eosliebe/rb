@@ -1171,8 +1171,8 @@ body, html {
     margin-left: -2px;
 }
 
-.rb-hidden-system-site .rb-system-site  .rb-icon-hide:hover .rb-icon:before {
-    color: #eee;
+.rb-hidden-system-site .rb-system-site .rb-icon-hide:hover .rb-icon:before {
+    color: #333;
 }
 
 
