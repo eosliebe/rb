@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="<?php echo $lang['sys']['lang']?>">
-<head>
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
@@ -44,14 +40,16 @@
 <link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $g['url_layout']?>/_includes/_global.css">
 
 <!-- local css -->
-<link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $g['url_layout'].'/'.str_replace('.php','.css',basename($d['layout']['php']))?>">
+<link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $g['url_layout']?>/assets/css/<?php echo str_replace('.php','.css',basename($d['layout']['php']))?>">
+
+
+<!-- Lazy Load XT :  http://ressio.github.io/lazy-load-xt -->
+<?php getImport('lazy-load-xt','jquery.lazyloadxt.min',false,'js')?>
+<?php getImport('lazy-load-xt','jquery.lazyloadxt.bg',false,'js')?>
+
 
 <!-- 사이트 헤드 코드 -->
 <?php echo $_HS['headercode']?>
 
 <!-- 엔진코드:삭제하지마세요 -->
-<?php include $g['path_core'].'engine/cssjs.engine.php'?>
-
-</head>
-
-<body id="rb-body" data-spy="scroll" data-target=".rb-nav-scrollspy">
+<?php include $g['path_core'].'engine/cssjs.engine.php' ?>

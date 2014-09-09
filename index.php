@@ -121,14 +121,11 @@ else
 	}
 
 	include './layouts/'.$d['layout']['dir'].'/_includes/_import.control.php';
-	include './layouts/'.$d['layout']['dir'].'/_includes/_import.head.php';
 
 	include $g['path_layout'].$d['layout']['php'];
 
 	$g['wdgcod'] = $g['path_tmp'].'widget/c'.$_HM['uid'].'.p'.$_HP['uid'].'.cache';
 	if(is_file($g['wdgcod'])) include $g['wdgcod'];
-
-	include './layouts/'.$d['layout']['dir'].'/_includes/_import.foot.php';
 
 	foreach($g['switch_4'] as $_switch) include $_switch;
 
