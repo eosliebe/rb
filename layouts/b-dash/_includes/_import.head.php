@@ -14,8 +14,8 @@
 <title><?php echo $g['browtitle']?></title>
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $g['url_layout']?>/assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="<?php echo $g['url_layout']?>/assets/ico/favicon.ico">
+<link href="<?php echo $g['url_layout']?>/assets/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" >
+<link href="<?php echo $g['url_layout']?>/assets/ico/favicon.ico" rel="shortcut icon">
 
 <!-- bootstrap css -->
 <?php getImport('bootstrap','css/bootstrap.min',false,'css')?>
@@ -37,11 +37,10 @@
 <link href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
 
 <!-- global css -->
-<link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $g['url_layout']?>/_includes/_global.css">
+<link href="<?php echo $g['url_layout']?>/_includes/_global.css" rel="stylesheet">
 
 <!-- local css -->
-<link type="text/css" rel="stylesheet" charset="utf-8" href="<?php echo $g['url_layout']?>/assets/css/<?php echo str_replace('.php','.css',basename($d['layout']['php']))?>">
-
+<link href="<?php echo $g['url_layout']?>/assets/css/<?php echo str_replace('.php','.css',basename($d['layout']['php']))?>" rel="stylesheet">
 
 <!-- Lazy Load XT :  http://ressio.github.io/lazy-load-xt -->
 <?php getImport('lazy-load-xt','jquery.lazyloadxt.min',false,'js')?>
