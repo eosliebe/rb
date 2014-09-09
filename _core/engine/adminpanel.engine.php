@@ -60,7 +60,7 @@ $_nowlayuotdir = dirname($_SESSION['setLayoutKind']?$_HS['m_layout']:$_HS['layou
 				<i class="fa rb-icon"></i> 
 			</span>	
 
-			<span class="rb-icon-minify" title="접기/펼치기" data-tooltip="tooltip"> 
+			<span class="rb-icon-minify" title="" data-tooltip="tooltip"> 
 				<i class="fa rb-icon"></i> 
 			</span>
 		</div>
@@ -661,12 +661,22 @@ $(document).ready(function(){
 
 	$(".rb-system-admin .rb-icon-minify").click(function(){
 		$(".container-fluid").toggleClass("rb-minified-sidebar");
+		if ($(".container-fluid").hasClass("rb-minified-sidebar")) {
+			$(".rb-system-sidebar .rb-icon-minify").attr("data-original-title", "펼치기");
+		} else {
+			$(".rb-system-sidebar .rb-icon-minify").attr("data-original-title", "접기");	
+		}
 		if(getCookie('_tabShow1')=='') setCookie('_tabShow1',1,1);
 		else setCookie('_tabShow1','',1);
 	});
 
 	$(".rb-system-admin .rb-icon-hide").click(function(){
 		$(".container-fluid").toggleClass("rb-hidden-system-admin");
+		if ($(".container-fluid").hasClass("rb-hidden-system-admin")) {
+			$(".rb-system-sidebar .rb-icon-hide").attr("data-original-title", "고정하기");
+		} else {
+			$(".rb-system-sidebar .rb-icon-hide").attr("data-original-title", "숨기기");	
+		}
 		if(getCookie('_tabShow2')=='') setCookie('_tabShow2',1,1);
 		else setCookie('_tabShow2','',1);
 	});
