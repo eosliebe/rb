@@ -95,13 +95,11 @@ else {
 $d['layout']['dir'] = dirname($d['layout']['php']);
 $g['dir_layout'] = $g['path_layout'].$d['layout']['dir'];
 $g['url_layout'] = $g['s'].'/layouts/'.$d['layout']['dir'];
-$g['img_layout'] = $g['url_layout'].'/images';
+$g['img_layout'] = $g['url_layout'].'/img';
 
 define('__KIMS_CONTENT__',$g['path_core'].'engine/content.engine.php');
-define('__KIMS_CONTAINER_HEAD__',$g['path_core'].'engine/container_head.engine.php');
-define('__KIMS_CONTAINER_FOOT__',$g['path_core'].'engine/container_foot.engine.php');
 
-if($my['admin'] && (!$_SERVER['HTTP_REFERER'] || $panel=='Y') && !$iframe && (!$g['mobile']||$_SESSION['pcmode']))
+if($my['admin'] && (!$_SERVER['HTTP_REFERER'] || $panel=='Y') && !$iframe)
 {
 	include $g['path_var'].'language/'.$g['sys_selectlang'].'/_top.lang.php';
 	include $g['path_core'].'engine/adminpanel.engine.php';
@@ -121,15 +119,8 @@ else
 	}
 
 	include './layouts/'.$d['layout']['dir'].'/_includes/_import.control.php';
-
 	include $g['path_layout'].$d['layout']['php'];
-
-	$g['wdgcod'] = $g['path_tmp'].'widget/c'.$_HM['uid'].'.p'.$_HP['uid'].'.cache';
-	if(is_file($g['wdgcod'])) include $g['wdgcod'];
-
 	foreach($g['switch_4'] as $_switch) include $_switch;
-
-	if($g['widget_cssjs']) include $g['path_core'].'engine/widget.cssjs.php';
 	if($g['buffer']) ob_end_flush();
 }
 ?>

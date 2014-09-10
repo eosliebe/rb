@@ -6,7 +6,7 @@
 
 <!-- Seo -->
 <meta name="robots" content="ALL">
-<meta name="generator" content="kimsQ-RB <?php echo $d['admin']['version']?>"> 
+<meta name="generator" content="kimsQ-Rb <?php echo $d['admin']['version']?>"> 
 <meta name="title" content="<?php echo strip_tags($g['meta_tit'])?>"> 
 <meta name="keywords" content="<?php echo strip_tags($g['meta_key'])?>"> 
 <meta name="description" content="<?php echo strip_tags($g['meta_des'])?>">
