@@ -1,116 +1,111 @@
-#rb-body .tab-content .form-group.tab-content {
-	border: 0;
-	padding: 0 15px;
-}
-
-#rb-body .tab-content .form-group {
-    margin-bottom: 25px;
-}
-
-.help-text {
-    margin-top: 5px
-}
-
-
-.dataTables_wrapper a{
-	color: #666
-}
-
-.form-horizontal .tab-content {
-	border: 0;
-	padding-top: 0;
-	padding-bottom: 0
-}
-
-
+#rb-body .tab-content .form-group.tab-content {
+	border: 0;
+	padding: 0 15px;
+}
+
+#rb-body .tab-content .form-group {
+    margin-bottom: 25px;
+}
+
+.help-text {
+    margin-top: 5px
+}
+
+.dataTables_wrapper a{
+	color: #666
+}
+
+.form-horizontal .tab-content {
+	border: 0;
+	padding-top: 0;
+	padding-bottom: 0
+}
+
 #rb-body .row,
 #rb-body .xrow {
 	margin-right: -5px;
 	margin-left: -5px;
-}
-
-#rb-body .col-sm-6,
-#rb-body .col-sm-12 {
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-
-.rb-advance {
-    border-top: 1px solid #EFEFEF;
-    padding-top: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px
-}
-
-.rb-advance .btn span:before {
-    content: "숨기기"
-}
-
-.rb-advance .btn.collapsed span:before {
-    content: "표시"
-}
-
-.input-group-addon:first-child,
-.input-group-btn:last-child>.btn,
-.input-group-addon:last-child {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-
-.help-block {
-	margin-top: 10px;
-	font-size: 13px
-}
-
-.rb-guide {
-    margin: 10px 0 0;
-    padding: 15px;
-    color: #777;
-    border-top: 1px solid #eee;
-    font-size: 13px
-}
-
-
-.form-horizontal .has-feedback.rb-outside .form-control-feedback {
-        right: -925px;
-}
-
-
-#page-settings {
-	padding-top: 15px;
-	margin-top: 40px;
-	border-top: 1px solid #EFEFEF
-}
-
-#page-settings .panel-default {
-	border: none;
-	box-shadow: none;
-}
-
-#page-settings .panel-default>.panel-heading {
-	background-color: transparent;
-	border: none;
-}
-
-#page-settings .panel-default .panel-title>a {
-	color: #428bca;
-}
-
-/*panel-form*/
-.rb-panelform {
-    margin-bottom: 0
-}
-
-.rb-panelform .panel-body {
-    padding: 0
-}
-
-.rb-panelform .form-control {
-    border-radius: 0
 }
 
+#rb-body .col-sm-6,
+#rb-body .col-sm-12 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.rb-advance {
+    border-top: 1px solid #EFEFEF;
+    padding-top: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.rb-advance .btn span:before {
+    content: "숨기기"
+}
+
+.rb-advance .btn.collapsed span:before {
+    content: "표시"
+}
+
+.input-group-addon:first-child,
+.input-group-btn:last-child>.btn,
+.input-group-addon:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.help-block {
+	margin-top: 10px;
+	font-size: 13px
+}
+
+.rb-guide {
+    margin: 10px 0 0;
+    padding: 15px;
+    color: #777;
+    border-top: 1px solid #eee;
+    font-size: 13px
+}
+
+.form-horizontal .has-feedback.rb-outside .form-control-feedback {
+        left: -925px;
+}
+
+#page-settings {
+	padding-top: 15px;
+	margin-top: 40px;
+	border-top: 1px solid #EFEFEF
+}
+
+#page-settings .panel-default {
+	border: none;
+	box-shadow: none;
+}
+
+#page-settings .panel-default>.panel-heading {
+	background-color: transparent;
+	border: none;
+}
+
+#page-settings .panel-default .panel-title>a {
+	color: #428bca;
+}
+
+
+/*panel-form*/
+
+.rb-panelform {
+    margin-bottom: 0
+}
+
+.rb-panelform .panel-body {
+    padding: 0
+}
+
+.rb-panelform .form-control {
+    border-radius: 0
+}
 
 
 /*김성호추가*/
@@ -187,4 +182,3 @@
 		padding-right:0;
 	}
 }
-
